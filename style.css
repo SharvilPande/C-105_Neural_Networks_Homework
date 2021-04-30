@@ -1,0 +1,54 @@
+#heading{
+    background-image: linear-gradient(to bottom right, rgb(69, 184, 69), yellow, rgb(163, 71, 71));
+    border: 3px dotted blue;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+marquee{
+    font-size: 20px;
+}
+
+#face_scan {
+    width: 350px;
+    float: left;
+
+}
+
+.font{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#family_div{
+    border-top: rgb(20, 220, 160) 4px solid;
+    border-bottom: rgb(20, 220, 160) 4px solid;
+}
+
+#cam_1{
+    border: 6px brown double;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+#cam_2{
+    float: right;
+    border: 6px brown double;
+    width: 400px;
+    height: 300px;
+    margin-top: -40px;
+}
+
+#l1{
+   margin-left: -450px;
+   margin-right: 620px;
+   margin-top: -20px;
+}
+
+#l2{
+  margin-bottom: 20px;
+  margin-top: -20px;  
+}
+
+

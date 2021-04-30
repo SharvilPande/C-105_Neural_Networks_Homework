@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family Identifier</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body style="background-color: cadetblue;">
+<div class="container">
+<marquee behavior="scroll" direction="right" bgcolor="red"><b>***The prototype is currently only made for my family***</b></marquee>
+<center>
+<h2 id="heading">FACE RECOGNITION LOCKER OPENER</h2>
+<div>
+<img id="face_scan" src="https://www.womanthology.co.uk/wp-content/uploads/2017/06/facescan.gif">
+<div id="family_div"><h3 style="font-size: 30px;"><b>All Family Members</b></h3><button class="btn btn-success" id="view_button" onclick="name_viewer()">Click to see names</button>
+<ul id="name_list">
+<li class="font">1.Mother</li>
+<li class="font">2.Father</li>
+<li class="font">3.Sharvil</li>
+</ul>
+</div>
+</div>
+<br><br><br><br>
+<div>
+<label id="l1"><mark>Live Webcam Feed:</mark></label>
+<div id="cam_1">
+</div>
+<label id="l2"><mark>Captured Image:</mark></label>
+<div id="cam_2">
+</div>
+</div>
+<br><br>
+<button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+<br><br>
+<button onclick="check()" class="btn btn-success">Identify Image</button>
+<br><br>
+<p style="font-size: 22px;">Object :<span id="object_identification"></span></p>
+<p style="font-size: 22px;">Accuracy :<span id="accuracy_identification"></span></p>
+</center>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
